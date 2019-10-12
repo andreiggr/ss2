@@ -8,19 +8,10 @@ const Table = ({ table }) => {
   const tableData = [...table.slice(1)];
 
   return (
-    <div>
+    <div style={{ display: "flex", flexDirection: "column" }}>
       <TableHeader headerData={tableHeader} />
       {tableData.map((row, index) => (
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "row",
-            width: "1000px"
-          }}
-          key={index}
-        >
-          <Row row={row} />
-        </div>
+        <Row key={index} row={row} />
       ))}
     </div>
   );

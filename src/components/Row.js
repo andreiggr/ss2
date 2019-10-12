@@ -1,7 +1,6 @@
 import React from "react";
 
 const Row = ({ row }) => {
-
   return (
     <div style={{display:"flex"}}>
       {row.map((item, i) => (
@@ -15,7 +14,7 @@ const Row = ({ row }) => {
           }}
           key={i}
         >
-          {item.$t}
+          <p>{item.$t}</p>
         </div>
       ))}
     </div>
