@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { applyFilter } from "../actions/items";
 
-const options = ["all", "Vertical", "Horizontal", "Suplementary"];
+const options = ["all", "Vertical", "Horizontal", "Supplementary"];
 
 const Filter = ({ title, changeFilter }) => {
   return (
