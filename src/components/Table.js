@@ -5,7 +5,10 @@ import { connect } from "react-redux";
 import applyFilter from "../utils/applyFilter";
 
 const Table = ({ table, filter }) => {
+  //select data for table header
   const tableHeader = table[0];
+
+  //select data for the main table with filters applied
   const tableData = [...table.slice(1)];
   const tableFiltered = applyFilter(tableData, filter)
 
