@@ -1,4 +1,4 @@
-import axios from 'axios';
+import filterData from "../utils/utils"
 
 export function itemsHasErrored(bool) {
   return {
@@ -19,18 +19,20 @@ export function itemsFetchDataSuccess(items) {
   };
 }
 
+
 export function itemsFetchData(url) {
   return (dispatch) => {
       dispatch(itemsIsLoading(true));
-      axios.get(url)
-          .then((response) => {
-              if (!response.ok) {
-                  throw Error(response.statusText);
-              }
-              dispatch(itemsIsLoading(false));
-              return response;
-          })
-          .then((items) => dispatch(itemsFetchDataSuccess(items)))
-          .catch(() => dispatch(itemsHasErrored(true)));
+      fetch(url)
+            .then((response) => {
+                if (!response.ok) {
+                    throw Error(response.statusText);
+                }
+                dispatch(itemsIsLoading(false));
+                return response;
+            })
+            .then((response) => response.json())
+            .then((rows) => dispatch(itemsFetchDataSuccess(filterData(rows))))
+            .catch(() => dispatch(itemsHasErrored(true)));
+    };
   };
-}
