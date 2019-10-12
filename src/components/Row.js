@@ -14,7 +14,7 @@ const Row = ({ row }) => {
           }}
           key={i}
         >
-          <p>{item.$t}</p>
+          <p>{item}</p>
         </div>
       ))}
     </div>

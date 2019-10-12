@@ -17,7 +17,7 @@ const TableHeader = ({ headerData }) => {
             }}
             key={i}
           >
-            <p style={{fontWeight:"bold"}}>{item.$t}</p>
+            <p style={{fontWeight:"bold"}}>{item}</p>
           </div>
         ))}
     </div>

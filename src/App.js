@@ -1,23 +1,23 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import { itemsFetchData } from "./actions/items";
+import { itemsFetchData, applyFilter } from "./actions/items";
 import Table from "./components/Table";
 import Filter from "./components/Filter";
 
 const apiUrl =
   "https://spreadsheets.google.com/feeds/list/10inbJvocvQP2xCCRPPqIOOPYt8w9SlwsqzPMqrY2Il8/onsxn4s/public/values?alt=json";
 
-const App = ({ items, fetchData }) => {
+const App = ({ items, fetchData}) => {
   useEffect(() => {
     fetchData(apiUrl);
   }, []);
 
-const typeOptions = ["Vertical", "Horizontal", "Suplementary"]
-
   return (
     <div>
       <p>Home page</p>
-      <Filter title="Type" options={typeOptions}/>
+      <Filter
+        title="Type"
+      />
       <Table table={items} />
     </div>
   );
@@ -33,7 +33,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    fetchData: url => dispatch(itemsFetchData(url))
+    fetchData: url => dispatch(itemsFetchData(url)),
   };
 };
 

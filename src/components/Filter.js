@@ -1,6 +1,10 @@
 import React from "react";
+import { connect } from "react-redux";
+import { applyFilter } from "../actions/items";
 
-const Filter = ({ title, options }) => {
+const options = ["all", "Vertical", "Horizontal", "Suplementary"];
+
+const Filter = ({ title, changeFilter }) => {
   return (
     <div
       style={{
@@ -10,7 +14,7 @@ const Filter = ({ title, options }) => {
       }}
     >
       <p style={{ marginRight: "15px" }}>{title}</p>
-      <select>
+      <select onChange={() => changeFilter(event.target.value)}>
         {options.map((title, i) => (
           <option key={i} value={title}>
             {title}
@@ -21,4 +25,19 @@ const Filter = ({ title, options }) => {
   );
 };
 
-export default Filter;
+const mapDispatchToProps = dispatch => {
+  return {
+    changeFilter: filter => dispatch(applyFilter(filter))
+  };
+};
+
+const mapStateToProps = state => {
+  return {
+    filter: state.filter
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Filter);
