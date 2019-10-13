@@ -1,32 +1,33 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
-import { itemsFetchData, applyFilter } from "./actions/items";
+import { itemsFetchData } from "./actions/items";
+
 import Table from "./components/Table";
 import Filter from "./components/Filter";
 
+import { apiUrl } from "./utils/api";
 
-const apiUrl =
-  "https://spreadsheets.google.com/feeds/list/10inbJvocvQP2xCCRPPqIOOPYt8w9SlwsqzPMqrY2Il8/onsxn4s/public/values?alt=json";
+const logoUrl = require("../src/assets/logo.png");
 
-const App = ({ items, fetchData}) => {
+export const App = ({ items, fetchData }) => {
   useEffect(() => {
     fetchData(apiUrl);
   }, []);
 
   return (
-    <div style={{display:"flex",flexDirection:"column", alignItems:"center"}}>
-      <p>Home page</p>
-      <Filter
-        title="Type"
-      />
-      <Table table={items} />
+    <div
+      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+    >
+      <h1>Systems Safety Standards v2</h1>
+      <img style={{ height: "200px", width: "200px" }} src={logoUrl} />
+      <Filter title="Type" />
+      <Table />
     </div>
   );
 };
 
 const mapStateToProps = state => {
   return {
-    items: state.items,
     hasErrored: state.itemsHasErrored,
     isLoading: state.itemsIsLoading
   };
@@ -34,7 +35,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    fetchData: url => dispatch(itemsFetchData(url)),
+    fetchData: url => dispatch(itemsFetchData(url))
   };
 };
 

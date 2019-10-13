@@ -1,0 +1,109 @@
+exports[`Row Render Test renders correctly the row with data 1`] = `
+Array [
+  <div
+    style={
+        Object {
+            "display": "flex",
+          }
+    }>
+    <div
+        style={
+            Object {
+                "border": "1px solid black",
+                "overflowWrap": "break-word",
+                "padding": "5px 5px 25px 5px",
+                "width": "150px",
+                "wordWrap": "break-word",
+              }
+        }>
+        <p>
+            info1
+        </p>
+    </div>
+    <div
+        style={
+            Object {
+                "border": "1px solid black",
+                "overflowWrap": "break-word",
+                "padding": "5px 5px 25px 5px",
+                "width": "150px",
+                "wordWrap": "break-word",
+              }
+        }>
+        <p>
+            info2
+        </p>
+    </div>
+    <div
+        style={
+            Object {
+                "border": "1px solid black",
+                "overflowWrap": "break-word",
+                "padding": "5px 5px 25px 5px",
+                "width": "150px",
+                "wordWrap": "break-word",
+              }
+        }>
+        <p>
+            info3
+        </p>
+    </div>
+    <div
+        style={
+            Object {
+                "border": "1px solid black",
+                "overflowWrap": "break-word",
+                "padding": "5px 5px 25px 5px",
+                "width": "150px",
+                "wordWrap": "break-word",
+              }
+        }>
+        <p>
+            info4
+        </p>
+    </div>
+    <div
+        style={
+            Object {
+                "border": "1px solid black",
+                "overflowWrap": "break-word",
+                "padding": "5px 5px 25px 5px",
+                "width": "150px",
+                "wordWrap": "break-word",
+              }
+        }>
+        <p>
+            info5
+        </p>
+    </div>
+    <div
+        style={
+            Object {
+                "border": "1px solid black",
+                "overflowWrap": "break-word",
+                "padding": "5px 5px 25px 5px",
+                "width": "150px",
+                "wordWrap": "break-word",
+              }
+        }>
+        <p>
+            info6
+        </p>
+    </div>
+    <div
+        style={
+            Object {
+                "border": "1px solid black",
+                "overflowWrap": "break-word",
+                "padding": "5px 5px 25px 5px",
+                "width": "150px",
+                "wordWrap": "break-word",
+              }
+        }>
+        <p>
+            info7
+        </p>
+    </div>
+</div>,
+]
+`;

@@ -1,6 +1,6 @@
 import React from "react";
 
-const TableHeader = ({ headerData }) => {
+export const TableHeader = ({ headerData }) => {
   return (
     <div style={{ display: "flex" }}>
       {headerData &&

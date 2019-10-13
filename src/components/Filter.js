@@ -5,7 +5,7 @@ import { applyFilter } from "../actions/items";
 //atm options will be here. When more filters, lift this up.
 const options = ["All", "Vertical", "Horizontal", "Supplementary"];
 
-const Filter = ({ title, changeFilter }) => {
+export const Filter = ({ title, changeFilter }) => {
   return (
     <div
       style={{

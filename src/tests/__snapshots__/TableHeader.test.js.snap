@@ -1,0 +1,151 @@
+exports[`TableHeader Render Test correctly display header data 1`] = `
+Array [
+  <div
+    style={
+        Object {
+            "display": "flex",
+          }
+    }>
+    <div
+        style={
+            Object {
+                "background": "#EEEFF5",
+                "border": "1px solid black",
+                "overflowWrap": "break-word",
+                "padding": "5px 5px 25px 5px",
+                "width": "150px",
+                "wordWrap": "break-word",
+              }
+        }>
+        <p
+            style={
+                Object {
+                    "fontWeight": "bold",
+                  }
+            }>
+            test1
+        </p>
+    </div>
+    <div
+        style={
+            Object {
+                "background": "#EEEFF5",
+                "border": "1px solid black",
+                "overflowWrap": "break-word",
+                "padding": "5px 5px 25px 5px",
+                "width": "150px",
+                "wordWrap": "break-word",
+              }
+        }>
+        <p
+            style={
+                Object {
+                    "fontWeight": "bold",
+                  }
+            }>
+            test2
+        </p>
+    </div>
+    <div
+        style={
+            Object {
+                "background": "#EEEFF5",
+                "border": "1px solid black",
+                "overflowWrap": "break-word",
+                "padding": "5px 5px 25px 5px",
+                "width": "150px",
+                "wordWrap": "break-word",
+              }
+        }>
+        <p
+            style={
+                Object {
+                    "fontWeight": "bold",
+                  }
+            }>
+            test3
+        </p>
+    </div>
+    <div
+        style={
+            Object {
+                "background": "#EEEFF5",
+                "border": "1px solid black",
+                "overflowWrap": "break-word",
+                "padding": "5px 5px 25px 5px",
+                "width": "150px",
+                "wordWrap": "break-word",
+              }
+        }>
+        <p
+            style={
+                Object {
+                    "fontWeight": "bold",
+                  }
+            }>
+            test4
+        </p>
+    </div>
+    <div
+        style={
+            Object {
+                "background": "#EEEFF5",
+                "border": "1px solid black",
+                "overflowWrap": "break-word",
+                "padding": "5px 5px 25px 5px",
+                "width": "150px",
+                "wordWrap": "break-word",
+              }
+        }>
+        <p
+            style={
+                Object {
+                    "fontWeight": "bold",
+                  }
+            }>
+            test5
+        </p>
+    </div>
+    <div
+        style={
+            Object {
+                "background": "#EEEFF5",
+                "border": "1px solid black",
+                "overflowWrap": "break-word",
+                "padding": "5px 5px 25px 5px",
+                "width": "150px",
+                "wordWrap": "break-word",
+              }
+        }>
+        <p
+            style={
+                Object {
+                    "fontWeight": "bold",
+                  }
+            }>
+            test6
+        </p>
+    </div>
+    <div
+        style={
+            Object {
+                "background": "#EEEFF5",
+                "border": "1px solid black",
+                "overflowWrap": "break-word",
+                "padding": "5px 5px 25px 5px",
+                "width": "150px",
+                "wordWrap": "break-word",
+              }
+        }>
+        <p
+            style={
+                Object {
+                    "fontWeight": "bold",
+                  }
+            }>
+            test7
+        </p>
+    </div>
+</div>,
+]
+`;

@@ -4,12 +4,12 @@ import TableHeader from "./TableHeader";
 import { connect } from "react-redux";
 import useFilter from "../utils/useFilter";
 
-const Table = ({ table, filter }) => {
+export const Table = ({ items, filter }) => {
   //select data for table header
-  const tableHeader = table[0];
+  const tableHeader = items[0];
 
   //select data for the main table with filters applied
-  const tableData = [...table.slice(1)];
+  const tableData = [...items.slice(1)];
   const tableFiltered = useFilter(tableData, filter)
 
   return (
