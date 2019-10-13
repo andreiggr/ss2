@@ -1,5 +1,5 @@
-export default function applyFilter(items, filter) {
-  if (filter === "all") {
+export default function useFilter(items, filter) {
+  if (filter === "All") {
     return items;
   } else {
 

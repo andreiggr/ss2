@@ -2,7 +2,8 @@ import React from "react";
 import { connect } from "react-redux";
 import { applyFilter } from "../actions/items";
 
-const options = ["all", "Vertical", "Horizontal", "Supplementary"];
+//atm options will be here. When more filters, lift this up.
+const options = ["All", "Vertical", "Horizontal", "Supplementary"];
 
 const Filter = ({ title, changeFilter }) => {
   return (

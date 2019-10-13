@@ -2,7 +2,7 @@ import React from "react";
 import Row from "./Row";
 import TableHeader from "./TableHeader";
 import { connect } from "react-redux";
-import applyFilter from "../utils/applyFilter";
+import useFilter from "../utils/useFilter";
 
 const Table = ({ table, filter }) => {
   //select data for table header
@@ -10,7 +10,7 @@ const Table = ({ table, filter }) => {
 
   //select data for the main table with filters applied
   const tableData = [...table.slice(1)];
-  const tableFiltered = applyFilter(tableData, filter)
+  const tableFiltered = useFilter(tableData, filter)
 
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
@@ -18,6 +18,7 @@ const Table = ({ table, filter }) => {
       {tableFiltered.map((row, index) => (
         <Row key={index} row={row} />
       ))}
+      <p> Total results: {tableFiltered.length} </p>
     </div>
   );
 };

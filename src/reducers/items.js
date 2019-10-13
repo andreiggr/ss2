@@ -22,7 +22,9 @@ export function items(state = [], action) {
       return state;
   }
 }
-export function filter(state = "", action) {
+const initialFilter = "All"
+
+export function filter(state = initialFilter, action) {
   switch (action.type) {
     case "APPLY_FILTER":
       return action.filter;
