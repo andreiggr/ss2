@@ -19,7 +19,7 @@ export const App = ({ items, fetchData }) => {
       style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
     >
       <h1>Systems Safety Standards v2</h1>
-      <img style={{ height: "200px", width: "200px" }} src={logoUrl} />
+      <img alt="" style={{ height: "200px", width: "200px" }} src={logoUrl} />
       <Filter title="Type" />
       <Table />
     </div>
